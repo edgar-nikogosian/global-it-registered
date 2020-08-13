@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="icon" href="./imgs/logo-title.png">
+	<link rel="stylesheet" href="intlTelInput.css">
+	<title>Global-it ծառայություններ</title>
+	<link rel="stylesheet" href="services-desktop.css">
+</head>
+<body>
+	<div class="free-advice-block">
+		<div class="free-advice-bgr"></div>
+		<div class="free-advice-inner">
+			<i id="advice-close-btn" class="fa fa-times" aria-hidden="true"></i>
+	
+			<div class="free-advice-heading"><img class="free-advice-ico" src="imgs/section1/customer1.svg" alt=""><p>Անվճար խորhրդատվություն</p></div>
+			<form id='free-advice' class="free-advice-inputs">
+				<input type="text" placeholder="Անուն Ազգանուն">
+				<input type="email" placeholder="Email">
+				<input type="tel"  placeholder="" id="telephone">
+				<input class='last-input' type="text" placeholder="Հարմար ժամեր" >
+				<button id="send" >Ուղարկել</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="mobile-menu-slider">
+
+	</div>
+	<div class="mobile-header">
+		<div class="mobile-header-bg">
+			<img src="./imgs/mobile/mobile-header-bg.svg" alt="">
+		</div>
+		<div class="mobile-header-logo"><img src="./imgs/mobile/mobile-logo.svg" alt=""></div>
+		<div class="mobile-header-items">
+					<div class="mobile-search">
+			<div class="mobile-search-panel">
+				<i id="mobile-search-ico" class="fa fa-search" aria-hidden="true"></i>
+				<input id="mobile-search-field" type="search" placeholder="Փնտրել">
+			</div>
+		</div>
+		<div class="mobile-menu">
+			<div class="menu-icon-wrapper">
+			<div class="menu-icon"></div>
+		    </div>
+		</div>
+	</div>
+
+	</div>
+	<div class="header">
+		<span class="header-logo"><a class="header-logo-link" href="../index.html"><img src="./imgs/logo.svg" alt="Global-it"></a></span>
+		<span class="header-sections">
+			<span class="header-section header-section-main"><a href="../index.html">Գլխավոր</a></span>
+			<span class="header-section header-section-services">Ծառայություններ<i class="fa fa-angle-down" aria-hidden="true"></i>
+							<div class="services-wrap-slide">
+								<a class="wrap-slide-text" href="../services-web/services-web.html"><p>Վեբ կայքերի պատրաստում</p></a>
+								<a class="wrap-slide-text" href="../services-mobile/services-mobile.html"><p>Հեռախոսային հավելվածներ</p></a>
+								<a class="wrap-slide-text" href="services-desktop.html"><p>Դեսքթոփ հավելվածներ</p></a>
+								<a class="wrap-slide-text"><p>Համակարգչային և հեռախոսային խաղեր</p></a>
+								<a class="wrap-slide-text"><p>Վեբ և գրաֆիկ դիզայն ՍԵՈ և ՍՄՄ առաջխաղացում</p></a>
+								<a class="wrap-slide-text"><p>Բիզնես կառավարում և մարքեթինգ</p></a>
+								<a class="wrap-slide-text"><p class="un-border">Հաշվապահական հաշվառում և Հարկային օրենսդրություն</p></a>
+							</div>
+			</span>
+			<span class="header-section header-section-faculties">Ֆակուլտետներ<i class="fa fa-angle-down" aria-hidden="true"></i>
+			           	<div class="faculties-wrap-slide">
+								<a class="wrap-slide-text"><p>Վեբ ծրագրավորում</p></a>
+								<a class="wrap-slide-text"><p>Համ. և մոբայլ ծրագրավորում</p></a>
+								<a class="wrap-slide-text"><p class="un-border">Մուլտիմեդիայի</p></a>
+						</div>
+			</span>
+			<span class="header-section header-section-job">Աշխատանք</span>
+			<span class="header-section header-section-tests">Թեստեր</span>
+			<span class="header-section header-section-contact">Կապ</span>
+			<span class="header-other-sections">
+			<span class="header-search">
+				<div class="search-panel">
+
+						<i id="search-ico" class="fa fa-search" aria-hidden="true"></i>
+						<input id="search-field" type="search" placeholder="Փնտրել">
+						</div>
+			</span>
+			<span id="lang-changer" class="header-lang-change">
+				<div class="flag">
+									<div class="lang-wrapper">
+										<div id="arm-flag" class="flag-item">
+											<img src="./imgs/LangflagArm.png" alt="">
+										</div>
+										<div id="rus-flag" class="flag-item">
+											<img src="./imgs/LangflagRus.png" alt="">
+										</div>
+										<div id="eng-flag" class="flag-item">
+											<img src="./imgs/LangflagEng.png" alt="">
+										</div>
+							</div>
+							</div>
+							<div class="lang-btn">
+								<i id="lang-rotate" class="fa fa-angle-down" aria-hidden="true"></i>
+							</div>
+			</span>
+			<span class="header-user"><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+			<span id="mobile-test-btn" class="header-theme-btn">
+				<span class="theme-main-btn">
+								<i class="fa fa-moon-o" aria-hidden="true"></i>
+								<i class="fa fa-sun-o" aria-hidden="true"></i>
+								<span class="theme-round-btn"></span>
+							</span>
+			</span>
+		</span>
+		</span>
+
+	</div>
+
+	<div class="main">
+		<div class="main-menu">
+
+			<a href="../services-web/services-web.html" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/web-dev.svg" alt=""></div>
+				<p class="menu-item-text">Վեբ կայքեր</p>
+			</a>
+			<a href="../services-mobile/services-mobile.html" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/mobile.svg" alt=""></div>
+				<p class="menu-item-text">Բջջային հավելվածներ</p>
+			</a>
+			<a href="services-desktop.html" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/comp-apps.svg" alt=""></div>
+				<p class="menu-item-text  menu-item-active">Համակարգչային հավելվածներ</p>
+			</a>
+			<a href="#" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/games.svg" alt=""></div>
+				<p class="menu-item-text">Համակարգչային և Մոբայլ խաղեր</p>
+			</a>
+			<a href="#" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/web-graphics.svg" alt=""></div>
+				<p class="menu-item-text">Վեբ և գրաֆիկ դիզայն</p>
+			</a>
+			<a href="#" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/seo.svg" alt=""></div>
+				<p class="menu-item-text">ՍԵՕ և ՍՄՍ առաջխաղացում</p>
+			</a>
+			<a href="#" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/marketing.svg" alt=""></div>
+				<p class="menu-item-text">Բիզնես կառավարում և մարքեթինգ</p>
+			</a>
+			<a href="#" class="main-menu-item">
+				<div class="menu-item-icon"><img src="./imgs/economics.svg" alt=""></div>
+				<p class="menu-item-text">Հաշվ․ հաշվառում, Հարկ․ օրենսդրություն</p>
+			</a>
+		</div>
+
+		<div class="main-inner">
+
+			<!--section1 -->
+			<div class="section1">
+			  <h1 class="whiteText">Համակարգչային հավելվածների պատրաստում</h1>
+			  <!--section1__freeAdvice-->
+			  <div class="section1__freeAdvice">
+					<div class="section1__freeAdvice-pic-wrapper">
+						<img src="imgs/section1/customer1.svg" alt="" >
+						<h3 class="whiteText">Անվճար խորդատվություն</h3>
+					</div>
+
+
+
+			    <!-- <div class="section1__freeAdvice-inputs-wrapper">
+			        <div class="section1__freeAdvice-yourName">
+			          <input class="section1InputBg name-input" placeholder="Ձեր անունը" type="text">
+			        </div>
+			        <div  class="section1__freeAdvice-yourPhone">
+			          <input class="section1InputBg phone-input" placeholder="Հեռ․ համար" type="text">
+			        </div>
+			    </div> -->
+
+
+
+
+			    <button  id='order-advice'>Ստանալ խորհրդատվություն</button>
+			  </div>
+			  <!--section1__answerQuestion-->
+			  <div  class="section1__answerQuestion">
+			    <img src="imgs/section1/customer2.svg" alt="">
+			    <p class="whiteText">Պատասխանեք հարցերին մասնագետներին ավելի մանրամասնի ինֆորմացիա տրամադրելու համար</p>
+			  </div>
+			  <!--section1__apply-->
+			  <div class="section1__apply">
+			    <span class="whiteText">1․ Դիմել որպես</span>
+			    <button id="naturalPersonBtn" class="section1__apply-naturalPerson whiteText section1InputBg section1ButtonBg">Ֆիզիկական անձ</button>
+			    <button id="legalPersonBtn" class="section1__apply-legalPerson">Իրավաբանական անձ</button>
+			  </div>
+				<!-- <div class="section1-card-wrapper"> -->
+
+					<form id="regForm" action="" name="myform" novalidate>
+
+				<div id="naturalPersonCart" class="section1__apply-cart section1CartBg">
+						  <!--section1__apply-cart-->
+						  <div class="section1CartBg">
+								<div class="section1__apply-one-wrap">
+									<div class="section1__apply-one">
+										<p>1</p>
+									</div>
+								</div>
+						  </div>
+
+							<div class="section1-nat-person-inputs">
+								<div class="nat-person-input-name nat-person-input">
+									<p>1․ Անուն</p>
+									<span class="input-bg section1__apply-input_nat-one">
+										<input id='section1_nat_name' class="section1CartBg-nat-one sec1-input-bg" type="text" name="" placeholder="Անուն">
+									</span>
+
+								</div>
+								<div class="nat-person-input-surename nat-person-input">
+									<p>2․ Ազգանուն</p>
+									<span class="input-bg section1__apply-input_nat-two" >
+										<input id='section1_nat_surename' class="section1CartBg-nat-two sec1-input-bg" type="text" name="" placeholder="Ազգանուն">
+									</span>
+								</div>
+								<div class="nat-person-input-phone nat-person-input">
+									<p>3․ Հեռախոսահամար</p>
+									<span class="input-bg section1__apply-input_nat-three">
+										<input id='section1_nat_phone' class="section1CartBg-nat-three sec1-input-bg" type="text" name="" placeholder="Հեռախոսահամար">
+									</span>
+								</div>
+								<div class="nat-person-input-mail nat-person-input">
+									<p>4․ Email</p>
+									<span class="input-bg section1__apply-input_nat-four">
+										<input id='section1_nat_mail' class="section1CartBg-nat-four sec1-input-bg" type="text" name="" placeholder="Email">
+									</span>
+								</div>
+
+							</div>
+							<div class="go-to-btn">
+								<div id="button-next_1-nat" type="button" name="button">Առաջ</div>
+							</div>
+							<div class="card-illustriation">
+								<img src="./imgs/chat_two.svg" alt="">
+							</div>
+						</div>
+
+	<div id="legalPersonCart" class="section1__apply-cart section1CartBg">
+			  <!--section1__apply-cart-->
+			  <div class="section1CartBg">
+					<div class="section1__apply-one-wrap">
+						<div class="section1__apply-one">
+							<p>1</p>
+						</div>
+					</div>
+			  </div>
+
+				<div class="section1-nat-person-inputs">
+					<div class="nat-person-input-name nat-person-input">
+						<p>1․ Ընկերության անունը</p>
+						<span class="input-bg section1__apply-input_one">
+							<input id='section1_leg_name' class="section1CartBg-one sec1-input-bg" type="text" name="" placeholder="Ընկերության անունը">
+						</span>
+
+					</div>
+					<div class="nat-person-input-surename nat-person-input">
+						<p>2․ Email</p>
+						<span class="input-bg section1__apply-input_two" >
+							<input id='section1_leg_mail' class="section1CartBg-two sec1-input-bg" type="text" name="" placeholder="Email">
+						</span>
+					</div>
+					<div class="nat-person-input-phone nat-person-input">
+						<p>3․ Հեռախոսահամար</p>
+						<span class="input-bg section1__apply-input_three">
+							<input id='section1_leg_phone' class="section1CartBg-three sec1-input-bg" type="text" name="" placeholder="Հեռախոսահամար">
+						</span>
+					</div>
+					<div class="nat-person-input-mail nat-person-input">
+						<p>4․ Ընկերության ՀՎՀՀ</p>
+						<span class="input-bg section1__apply-input_four">
+							<input id='section1_leg_comp' class="section1CartBg-four sec1-input-bg" type="text" name="" placeholder="Ընկերության ՀՎՀՀ">
+						</span>
+					</div>
+
+				</div>
+				<div class="go-to-btn">
+					<div id="button-next_1-legal" type="button" name="button">Առաջ</div>
+				</div>
+				<div class="card-illustriation">
+					<img src="./imgs/chat_two.svg" alt="">
+				</div>
+</div>
+<!------------------------------section 2--------------------->
+
+<div class="section2-nat">
+	<div class="section2_nubmber">
+		<p>2</p>
+	</div>
+	<div class="section2_iputs">
+		<div class="section2_iput_typeofactivity">
+			<div class="section2_iput_typeofactivity_secton1">
+				<div class="section2_iput_typeofactivity_title">
+					<p>5․ Գործունեությոն տեսակը</p>
+				</div>
+				<div class="section2_iput_typeofactivity_input">
+					<input type="text" class="section2-input" id="input1" placeholder="Անվանում">
+				</div>
+			</div>
+			<div class="section2_iput_typeofactivity_secton2">
+				<div class="section2_iput_typeofactivity_title">
+					<p class="section2_iput_typeofactivity_title_p"> 6․ Բրենդի (Ապրանքի կամ ծառայության անվանում)
+					</p>
+					<p class="section2_iput_typeofactivity_title_p_2"> 6․ Բրենդի անվանում
+					</p>
+				</div>
+				<div class="section2_iput_typeofactivity_secton2_input">
+					<input type="text" class="section2-input" id="input2" placeholder="Բրենդի անվանումը">
+				</div>
+			</div>
+		</div>
+		<div class="section2_iput_typeofactivity">
+			<div class="section2_iput_typeofactivity_section3">
+				<div class="section2_iput_typeofactivity_section3_title">
+					<p class="section2_iput_typeofactivity_section3_title_p1">7․ Լոգոի առկայություն (Բացակայության դեպքում կարող եք պատվիրել)</p>
+					<p class="section2_iput_typeofactivity_section3_title_p2">7․ Լոգոի առկայություն </p>
+				</div>
+				<div class="section2_iput_typeofactivity_section3_inputs">
+					<div class="section2_iput_typeofactivity_section3_input">
+						<input type="text" class="section2-input" id="input3" placeholder="Պատվիրել լոգո">
+					</div>
+					<div class="section2_iput_typeofactivity_section3_addfile">
+						<input type="file"name="existed-leng"  id='file' class="hiden-element">
+						<label for="file">
+							<i class="fa fa-picture-o" aria-hidden="true"></i>
+
+							<span>Կցել լոգոն</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="section2_iput_typeofactivity_section4">
+				<img src="./images/1.png" alt="">
+			</div>
+		</div>
+		<div class="section2_iput_typeofactivity_i_have_a_website">
+			<div class="section2_iput_typeofactivity_i_have_a_website_title">
+				<p>8․ Ունեմ կայք որը պետք է թարմացնել և սպասարկել</p>
+			</div>
+			<div class="section2_iput_typeofactivity_i_have_a_website_input">
+				<input type="text" class="section2-input" id="input4" placeholder="Հղումը դեպի կայք">
+			</div>
+		</div>
+		<div class="section2_iput_typeofactivity_button_next">
+			<div id="button-prev_1" >ետ</div>
+			<div id="button-next_2" class="section2_iput_typeofactivity_button_next_button">Առաջ</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="section2">
+	<div class="section2_nubmber">
+		<p>2</p>
+	</div>
+	<div class="section2_iputs">
+		<div class="section2_iput_typeofactivity">
+			<div class="section2_iput_typeofactivity_secton1">
+				<div class="section2_iput_typeofactivity_title">
+					<p>5․ Գործունեությոն տեսակը</p>
+				</div>
+				<div class="section2_iput_typeofactivity_input section2_iput_typeofactivity_input-leg">
+					<input type="text" class="section2-input" id="input1-leg" placeholder="Անվանում">
+				</div>
+			</div>
+			<div class="section2_iput_typeofactivity_secton2">
+				<div class="section2_iput_typeofactivity_title">
+					<p class="section2_iput_typeofactivity_title_p"> 6․ Բրենդի (Ապրանքի կամ ծառայության անվանում)
+					</p>
+					<p class="section2_iput_typeofactivity_title_p_2"> 6․ Բրենդի անվանում
+					</p>
+				</div>
+				<div class="section2_iput_typeofactivity_secton2_input section2_iput_typeofactivity_secton2_input-leg">
+					<input type="text" class="section2-input" id="input2-leg" placeholder="Բրենդի անվանումը">
+				</div>
+			</div>
+		</div>
+		<div class="section2_iput_typeofactivity">
+			<div class="section2_iput_typeofactivity_section3">
+				<div class="section2_iput_typeofactivity_section3_title">
+					<p class="section2_iput_typeofactivity_section3_title_p1">7․ Լոգոի առկայություն (Բացակայության դեպքում կարող եք պատվիրել)</p>
+					<p class="section2_iput_typeofactivity_section3_title_p2">7․ Լոգոի առկայություն </p>
+				</div>
+				<div class="section2_iput_typeofactivity_section3_inputs">
+					<div class="section2_iput_typeofactivity_section3_input section2_iput_typeofactivity_section3_input-leg">
+						<input type="text" class="section2-input" id="input3-leg" placeholder="Պատվիրել լոգո">
+					</div>
+					<div class="section2_iput_typeofactivity_section3_addfile">
+						<input type="file"name="existed-leng"  id='file2' class="hiden-element">
+						<label for="file2">
+							<i class="fa fa-picture-o" aria-hidden="true"></i>
+
+							<span>Կցել լոգոն</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="section2_iput_typeofactivity_section4">
+				<img src="./images/1.png" alt="">
+			</div>
+		</div>
+		<div class="section2_iput_typeofactivity_i_have_a_website">
+			<div class="section2_iput_typeofactivity_i_have_a_website_title">
+				<p>8․ Հավելվածի տեսակը (Խաղ, ծառայության հավելված, վաճառք)</p>
+			</div>
+			<div class="section2_iput_typeofactivity_i_have_a_website_input section2_iput_typeofactivity_i_have_a_website_input-leg">
+				<input type="text" class="section2-input" id="input4-leg" placeholder="Հղումը դեպի կայք">
+			</div>
+		</div>
+
+		<div class="section2_iput_company-adress">
+			<p>9․ Ընկերության հասցեն</p>
+			<span class="input-bg" id="section2-input9-bg">
+	  		<input class="section2-input" type="text" id="section2-input9" placeholder="Ընկերության հասցեն">
+		  </span>
+		</div>
+		<div class="section2_iput_boss">
+			<p>10․ Ընկերության Տնօրենի անձնական տվյալները</p>
+			<div class="boss-inputs-wrapper">
+				<span class="input-bg" id="section2-input10-name-bg">
+					<input class="section2-input" type="text" id="section2-input10-name" placeholder="ԸՏնօրենի անունը">
+				</span>
+				<span class="input-bg" id="section2-input10-surename-bg">
+					<input class="section2-input" type="text" id="section2-input10-surename" placeholder="Տնօրենի ազգանունը">
+				</span>
+				<span class="input-bg" id="section2-input10-phone-bg">
+					<input class="section2-input" type="text" id="section2-input10-phone" placeholder="Տնօրենի հեռ․ համարը">
+				</span>
+				<span class="input-bg" id="section2-input10-mail-bg">
+					<input class="section2-input" type="text" id="section2-input10-mail" placeholder="Տնօրենի Email-ը">
+				</span>
+			</div>
+
+		</div>
+		<div class="section2_iput_typeofactivity_button_next">
+			<div id="button-prev_1-leg" >ետ</div>
+			<div id="button-next_2-leg" class="section2_iput_typeofactivity_button_next_button">Առաջ</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+			<!-- section3 -->
+			<div class="section3_card3">
+					<div class="section3_site_type">
+						<div class="section3_third_text">
+							<div class="section3_third">
+								<p>3</p>
+							</div>
+							<div class="section3_text">
+								<p class="dark changebleText1">9․ Օպերացիոն համակարգ (պլատֆորմ)</p>
+							</div>
+
+							<div class="os-select-wrapper">
+								<div class="section3_os_choice">
+									<p class="dark" >Ընտրել</p>
+									<i class="fa fa-angle-down dark" aria-hidden="true" ></i>
+								</div>
+								<div class="os-dropdown">
+									<p id='windows'>Windows</p>
+									<p id='macos'>Mac OS</p>
+									<p id='linux'>Linux</p>
+
+								</div>
+
+								<div class="counter-OS">
+
+								</div>
+								<div class="selected-os-container">
+									<!-- <div class="selected-language">
+										english
+										<i class="fa fa-times" aria-hidden="true"></i>
+
+									</div> -->
+								</div>
+							</div>
+
+						</div>
+
+						<!------------------- Language ------------------>
+						<div class="section3_language">
+							<div class="section3_language_text">
+								<p class="dark changebleText3">10․ Լեզուների քանակը</p>
+							</div>
+							<div class="languages-select-wrapper">
+								<div class="section3_language_choice">
+									<p class="dark" >Ընտրել</p>
+									<i class="fa fa-angle-down dark" aria-hidden="true" ></i>
+								</div>
+								<div class="laguage-dropdown">
+									<p id='arm'>Հայերեն</p>
+									<p id='rus'>Русский</p>
+									<p id='eng'>English</p>
+									<p id='fra'>Français</p>
+									<p id='germ'>Deutsche</p>
+									<p id='dutch'>Nederlands</p>
+									<p id='spain'>Español</p>
+									<p id='ital'>Italiano</p>
+									<p id='arab'>عربى</p>
+									<p id='slav'>Slovansko</p>
+									<p id='czech'>Čeština</p>
+
+								</div>
+
+								<div class="counter">
+
+								</div>
+								<div class="selected-languages-container">
+									<!-- <div class="selected-language">
+										english
+										<i class="fa fa-times" aria-hidden="true"></i>
+
+									</div> -->
+								</div>
+							</div>
+
+
+						</div>
+						<!------------------- Language  end------------------>
+						<!--------------------Mobail ---------------->
+						<div class="section3_mobail">
+							<div class="section3_mobail_text">
+								<p class="dark changebleText4">11․ Հավելվածի նպատակը</p>
+							</div>
+							<div class="section3_mobail_input">
+								<input type="text" id="input_name4" class="darkbg" placeholder="Հավելվածի նպատակը">
+							</div>
+						</div>
+						<!--------------------Mobail  end---------------->
+
+
+
+
+						<!-------------------- Preferred design ---------------->
+						<div class="section3_preferred_design">
+							<div class="section3_preferred_design_text">
+								<p class="dark changebleText6"> 12․ Նախնտրելի դիզայնի տարբերակ (Չունենալու դեպքում<br> կարող եք պատվիրել)</p>
+							</div>
+							<div class="section3_preferred_design_input">
+								<div class="section3_preferred_design_input_1">
+									<input type="text" id="input_name6" class="darkbg" placeholder="Դիզայն ունեմ / Պետք է պատվիրել">
+								</div>
+								<div class="section3_preferred_design_input_2">
+									<input type="text" id="input_name7"  class="darkbg" placeholder="Կցել դիզայնի ֆայլը / լինքը ">
+								</div>
+							</div>
+						</div>
+						<!--------------------Preferred design  end---------------->
+
+						<!-------------------- send ---------------->
+						<div class="send">
+							<div id="button-prev_2" >ետ</div>
+							<button>Ուղարկել</button>
+						</div>
+						<!-------------------- send end ---------------->
+
+					</div>
+				</div>
+
+
+</form>
+				<!-----------------------------section 3 end----------------------------->
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+
+
+
+
+
+	</div>
+<div class="footer">
+	<div class="footer-inner">
+			<div class="global-it-info">
+				<div class="footer-global-it-logo global-it-logo">
+					<img class="footer-logo-mobile" src="./imgs/mobile/mobile-logo.svg" alt="">
+				<img class="footer-logo-screen" src="./imgs/logo-title.png" alt="logo">
+				<span class="footer-logo-heading logo-heading">global <span class="logo-heading-purp">it</span></span>
+			</div>
+				<div class="global-it-text">ԳԼՈԲԱԼ ԻՏ ՍՊԸ-ն հիմնադրվել է 2017թ.-ի հոկտեմբերի 19ին Գ. Քոսյանի կողմից: Մենք առաջարկում ենք ծրագրային տարատեսակ լուծումներ, որոնց նպատակն է մեծացնել Ձեր բիզնեսի շահութաբերությունը և նպաստել աճին: Մեր ստեղծարար թիմը համատեղ ուժերով տալիս Է նորարարական լուծումներ, որոնք նպաստում են Ձեր բիզնեսի թիրախային լսարանի ներգրավմանը:</div>
+				<div class='footer-social-media'>
+				  <a href="https://www.facebook.com/Globalitschool"><img src="imgs/facebook-logo.svg" alt=""></a>
+				  <a href="#"><img src="imgs/twitter-logo.svg" alt=""></a>
+				  <a href="#"><img src="imgs/instagram-logo.svg" alt=""></a>
+				  <a href="#"><img src="imgs/viber-logo.svg" alt=""></a>
+				</div>
+			</div>
+			<div class="footer-trainings">
+				<div class="footer-global-heading trainings-heading"><p>Դասընթացներ</p></div>
+				<ul>
+					<li><a href="#">Վեբ ծրագրավորում</a></li>
+					<li><a href="#">Ծրագրավորում</a></li>
+					<li><a href="#">Մուլտիմեդիա</a></li>
+					<li><a href="#">Նախագծեր</a></li>
+					<li><a href="#">Անվճար դասընթացներ</a></li>
+					<li><a href="#">Այլ Դասընթացներ</a></li>
+					<li><a href="#">Անվճար Դպրոց 1-4 դասարան</a></li>
+					<li><a href="#">Անվճար Դպրոց 5-9 դասարան</a></li>
+				</ul>
+			</div>
+			<div class="footer-map">
+				<div class="footer-global-heading map-heading"><p>Կայքի Քարտեզ</p></div>
+				<ul>
+					<li><a href="#lessons">Դասընթացներ</a></li>
+					<li><a href="#about-us-charts">Մեր մասին</a></li>
+					<li><a href="#our-services">Վեբ կայքերի պատրաստում</a></li>
+					<li><a href="#our-services">Հեռախոսային և Դեսքթոփ հավելվածներ</a></li>
+
+				</ul>
+			</div>
+			<div class="footer-contacts">
+				<div class="footer-global-heading contact-heading"><p>Հետադարձ Կապ</p></div>
+				<ul>
+					<li> ք. Երևան Պ. Սևակ 15/1</li>
+					<li>ք. Աբովյան գ. Արամուս Մշակույթի տուն</li>
+					<li><ul class="footer-no-margin">
+					<li><a class="number-call" href="tel:+37455560590">+374 55 560 590</a></li>
+					<li><a class="number-call" href="tel:+37495355255">+374 95 355 255</a></li>
+					<li><a class="number-call" href="tel:+37494806714">+374 94 806 714</a></li>
+					<li><a class="number-call" href="tel:+37441806714">+374 41 806 714</a></li>
+					<li><a class="number-call" href="tel:+37443960950">+374 43 960 950</a></li>
+					<li><a class="number-call" href="tel:+37498960950">+374 98 960 950</a></li>
+					<li><a href="mailto:gitedu@bk.ru">gitedu@bk.ru</a></li>
+					<li><a href="mailto:globalit@gitedu.am">globalit@gitedu.am</a></li>
+					</ul></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="copyright-wrapper">
+				<p>Copyright ©2020 Բոլոր հեղինակային իրավունքները պաշտպանված են: |  Կայքը պատրաստված է "ԳԼՈԲԱԼ ԻՏ" (ՍՊԸ)-ի կողմից, որը հանդիսանում է ընկերության Պաշտոնական կայքէջը: Կայքից նույթ տեղադրելիս հղումը gitedu.am-ին պարտադիր է:</p>
+				<span class="mobile-footer-copyright">Copyright .2020</span>
+			</div>
+
+		</div>
+</div>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="intlTelInput-jquery.js"></script>
+	<script src="./services-desktop.js"></script>
+</body>
+</html>
