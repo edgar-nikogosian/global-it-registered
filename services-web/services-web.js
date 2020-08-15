@@ -148,7 +148,7 @@ const section1ButtonBg = document.querySelector('.section1ButtonBg');
 const sec1InputBg = document.querySelectorAll('.sec1-input-bg')
 
 //section 3
-const section3_card3 = document.querySelector(".section3_card3");
+const section3_card3 = document.querySelectorAll(".section3_card3");
 const darkcolor = document.querySelectorAll(".dark")
 const darkbg = document.querySelectorAll(".darkbg")
 
@@ -211,13 +211,13 @@ themeBtnRound.addEventListener('click', () => {
     darkbg.forEach((item) => {
       item.style.color = '#fff'
     })
-    section3_card3.style.background = '#2A0054';
+    section3_card3.forEach(item =>item.style.background = '#2A0054');
 
     ///mobile header
     mobHead.style.background = '#110022'
     if (window.screen.width <= 450) {
       document.body.style.background = '#110022'
-      section3_card3.style.background = '#110022'
+      section3_card3.forEach(item =>item.style.background = '#110022');
       darkbg.forEach((item) => {
         item.style.background = '#110022'
 
@@ -261,7 +261,7 @@ themeBtnRound.addEventListener('click', () => {
       item.style.background = '#fff'
     })
     darkcolor.forEach(item => item.style.color = "#000");
-    section3_card3.style.background = '#ffffff';
+    section3_card3.forEach(item => item.style.background = '#ffffff');
     darkbg.forEach((item) => {
       item.style.color = '#000'
     })
