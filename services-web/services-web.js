@@ -211,13 +211,13 @@ themeBtnRound.addEventListener('click', () => {
     darkbg.forEach((item) => {
       item.style.color = '#fff'
     })
-    section3_card3.forEach(item =>item.style.background = '#2A0054');
+    section3_card3.forEach(item => item.style.background = '#2A0054');
 
     ///mobile header
     mobHead.style.background = '#110022'
     if (window.screen.width <= 450) {
       document.body.style.background = '#110022'
-      section3_card3.forEach(item =>item.style.background = '#110022');
+      section3_card3.forEach(item => item.style.background = '#110022');
       darkbg.forEach((item) => {
         item.style.background = '#110022'
 
@@ -402,16 +402,18 @@ bossMail.addEventListener('blur', () => {
 
 
 const nameInput1sec2 = document.querySelector('#input1');
-const divBackgr1sec2 = document.querySelector('.section2_iput_typeofactivity_input');
+const divBackgr1sec2 = document.querySelector('.section2_iput_typeofactivity_input.nat');
 const nameInput2sec2 = document.querySelector('#input2');
-const divBackgr2sec2 = document.querySelector('.section2_iput_typeofactivity_secton2_input');
+const divBackgr2sec2 = document.querySelector('.section2_iput_typeofactivity_secton2_input.nat');
 const nameInput3sec2 = document.querySelector('#input3');
-const divBackgr3sec2 = document.querySelector('.section2_iput_typeofactivity_section3_input');
+const divBackgr3sec2 = document.querySelector('.section2_iput_typeofactivity_section3_input.nat');
 const nameInput4sec2 = document.querySelector('#input4');
-const divBackgr4sec2 = document.querySelector('.section2_iput_typeofactivity_i_have_a_website_input');
+const divBackgr4sec2 = document.querySelector('.section2_iput_typeofactivity_i_have_a_website_input.nat');
 
 
 nameInput1sec2.addEventListener('focus', () => {
+  console.log("pxk")
+  console.log(divBackgr1sec2)
   divBackgr1sec2.style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
 
 })
@@ -558,6 +560,7 @@ const natPerson = document.getElementById('naturalPersonCart')
 const legPerson = document.getElementById('legalPersonCart')
 
 naturalPersonBtn.addEventListener('click', () => {
+  if (legform.style.display === 'none') return false;
   legform.style.display = 'none';
   page1leg.style.display = 'flex'
   page2leg.style.display = 'none'
@@ -580,11 +583,12 @@ naturalPersonBtn.addEventListener('click', () => {
 });
 
 legalPersonBtn.addEventListener('click', () => {
-  legform.style.display = 'block'
+  if (natform.style.display === 'none') return false;
   natform.style.display = 'none'
   page1.style.display = 'flex'
   page2.style.display = 'none'
   page3.style.display = 'none'
+  legform.style.display = 'block'
   natPerson.style.display = 'none'
   legPerson.style.display = 'block'
 
@@ -675,105 +679,60 @@ document.querySelector('.menu-icon-wrapper').onclick = function () {
 
 /////////////////////////section 3 //////////////////////////////////////////
 
-const nameInput3 = document.querySelector('#input_name3');
-const divBackgr3 = document.querySelector('.section3_what_do_i_want_input');
-const nameInput4 = document.querySelector('#input_name4');
-const divBackgr4 = document.querySelector('.section3_mobail_input');
-const nameInput5 = document.querySelector('#input_name5');
-const divBackgr5 = document.querySelector('.section3_domen_input');
-const nameInput6 = document.querySelector('#input_name6');
-const divBackgr6 = document.querySelector('.section3_preferred_design_input_1');
-const nameInput7 = document.querySelector('#input_name7');
-const divBackgr7 = document.querySelector('.section3_preferred_design_input_2');
+const nameInput3 = document.querySelectorAll('#input_name3');
+const divBackgr3 = document.querySelectorAll('.section3_what_do_i_want_input');
+const nameInput4 = document.querySelectorAll('#input_name4');
+const divBackgr4 = document.querySelectorAll('.section3_mobail_input');
+const nameInput5 = document.querySelectorAll('#input_name5');
+const divBackgr5 = document.querySelectorAll('.section3_domen_input');
+const nameInput6 = document.querySelectorAll('#input_name6');
+const divBackgr6 = document.querySelectorAll('.section3_preferred_design_input_1');
+const nameInput7 = document.querySelectorAll('#input_name7');
+const divBackgr7 = document.querySelectorAll('.section3_preferred_design_input_2');
 
 
-nameInput3.addEventListener('focus', () => {
-  divBackgr3.style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+nameInput3.forEach((item, index) => item.addEventListener('focus', () => {
+  divBackgr3[index].style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+}))
+nameInput3.forEach((item, index) => item.addEventListener('blur', () => {
+  divBackgr3[index].style.background = 'gray';
+}))
+nameInput4.forEach((item, index) => item.addEventListener('focus', () => {
+  divBackgr4[index].style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+}))
+nameInput4.forEach((item, index) => item.addEventListener('blur', () => {
+  divBackgr4[index].style.background = 'gray';
+}))
+nameInput5.forEach((item, index) => item.addEventListener('focus', () => {
+  divBackgr5[index].style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+}))
+nameInput5.forEach((item, index) => item.addEventListener('blur', () => {
+  divBackgr5[index].style.background = 'gray';
+}))
 
-})
-nameInput3.addEventListener('blur', () => {
-  divBackgr3.style.background = 'gray';
-})
-nameInput4.addEventListener('focus', () => {
-  divBackgr4.style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+nameInput6.forEach((item, index) => item.addEventListener('focus', () => {
+  divBackgr6[index].style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+}))
+nameInput6.forEach((item, index) => item.addEventListener('blur', () => {
+  divBackgr6[index].style.background = 'gray';
+}))
 
-})
-nameInput4.addEventListener('blur', () => {
-  divBackgr4.style.background = 'gray';
-})
-nameInput5.addEventListener('focus', () => {
-  divBackgr5.style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+nameInput7.forEach((item, index) => item.addEventListener('focus', () => {
+  divBackgr7[index].style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
+}))
+nameInput7.forEach((item, index) => item.addEventListener('blur', () => {
+  divBackgr7[index].style.background = 'gray';
+}))
 
-})
-nameInput5.addEventListener('blur', () => {
-  divBackgr5.style.background = 'gray';
-})
-
-nameInput6.addEventListener('focus', () => {
-  divBackgr6.style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
-})
-nameInput6.addEventListener('blur', () => {
-  divBackgr6.style.background = 'gray';
-})
-
-nameInput7.addEventListener('focus', () => {
-  divBackgr7.style.background = 'linear-gradient(to right, #ff4e39, #1e7cff, #2cfff2)'
-
-})
-nameInput7.addEventListener('blur', () => {
-  divBackgr7.style.background = 'gray';
-})
-
+const section3_type_choices = document.querySelectorAll(".section3_type_choice");
 
 $(document).ready(function () {
-  $(".section3_type_choice1").click(function () {
-    $(".section3_type_your_choice1").css("display", "block");
-    $(".section3_type_your_choice2").css("display", "none");
-    $(".section3_type_your_choice3").css("display", "none");
-    $(".section3_type_your_choice4").css("display", "none");
-    $(".section3_type_your_choice5").css("display", "none");
-    $(".section3_type_your_choice6").css("display", "none");
-  });
-  $(".section3_type_choice2").click(function () {
-    $(".section3_type_your_choice1").css("display", "none");
-    $(".section3_type_your_choice2").css("display", "block");
-    $(".section3_type_your_choice3").css("display", "none");
-    $(".section3_type_your_choice4").css("display", "none");
-    $(".section3_type_your_choice5").css("display", "none");
-    $(".section3_type_your_choice6").css("display", "none");
-  });
-  $(".section3_type_choice3").click(function () {
-    $(".section3_type_your_choice1").css("display", "none");
-    $(".section3_type_your_choice2").css("display", "none");
-    $(".section3_type_your_choice3").css("display", "block");
-    $(".section3_type_your_choice4").css("display", "none");
-    $(".section3_type_your_choice5").css("display", "none");
-    $(".section3_type_your_choice6").css("display", "none");
-  });
-  $(".section3_type_choice4").click(function () {
-    $(".section3_type_your_choice1").css("display", "none");
-    $(".section3_type_your_choice2").css("display", "none");
-    $(".section3_type_your_choice3").css("display", "none");
-    $(".section3_type_your_choice4").css("display", "block");
-    $(".section3_type_your_choice5").css("display", "none");
-    $(".section3_type_your_choice6").css("display", "none");
-  });
-  $(".section3_type_choice5").click(function () {
-    $(".section3_type_your_choice1").css("display", "none");
-    $(".section3_type_your_choice2").css("display", "none");
-    $(".section3_type_your_choice3").css("display", "none");
-    $(".section3_type_your_choice4").css("display", "none");
-    $(".section3_type_your_choice5").css("display", "block");
-    $(".section3_type_your_choice6").css("display", "none");
-  });
-  $(".section3_type_choice6").click(function () {
-    $(".section3_type_your_choice1").css("display", "none");
-    $(".section3_type_your_choice2").css("display", "none");
-    $(".section3_type_your_choice3").css("display", "none");
-    $(".section3_type_your_choice4").css("display", "none");
-    $(".section3_type_your_choice5").css("display", "none");
-    $(".section3_type_your_choice6").css("display", "block");
-  });
+  section3_type_choices.forEach(item => {
+    item.addEventListener('click', (e) => {
+      section3_type_choices.forEach(item => item.querySelector('.section3_type_your_choice').style.display = 'none')
+      e.currentTarget.querySelector('.section3_type_your_choice').style.display = 'block';
+    })
+  })
   $(".apply_as_buttone1").click(function () {
     $(".apply_as_buttone1").css("background", "#4200CF");
     $(".apply_as_buttone1").css("color", "#ffffff");
@@ -829,55 +788,67 @@ const nextButton1 = document.getElementById('button-next_1-nat')
 const nextButton1leg = document.getElementById('button-next_1-legal')
 const nextButton2 = document.getElementById('button-next_2')
 const nextButton2leg = document.getElementById('button-next_2-leg')
+const backButton2 = document.getElementById('button-back_2')
+const backButton2leg = document.getElementById('button-back_2-leg')
+const backButton3 = document.getElementById('button-back_3')
+const backButton3leg = document.getElementById('button-back_3-leg')
 
 
 
 nextButton1.addEventListener('click', () => {
-  // if(sec1_nat_name.value.length>0 && sec1_nat_surename.value.length>0  && sec1_nat_phone.value.length>0  && sec1_nat_mail.value.length>0 ){
   page1.style.display = 'none'
   page2.style.display = 'flex'
   page3.style.display = 'none'
   legform.style.display = 'none';
-  // }
 })
 
-
 nextButton1leg.addEventListener('click', () => {
-  // if(sec1_leg_name.value.length>0  && sec1_leg_phone.value.length>0 && sec1_leg_mail.value.length>0 && sec1_leg_comp.value.length>0 ){
   page1leg.style.display = 'none'
-  // page2.style.display = 'none'
   page2leg.style.display = 'flex'
-  // page3.style.display = 'none'
-  //  }
   page3leg.style.display = 'none'
   natform.style.display = 'none'
 })
 
 
 nextButton2.addEventListener('click', () => {
-  // if(sec2_name.value.length>0 && sec2_brandName.value.length>0){
   page1.style.display = 'none'
   page2.style.display = 'none'
   page3.style.display = 'block'
   legform.style.display = 'none';
-  // }
 })
 nextButton2leg.addEventListener('click', () => {
-  // if(sec2_leg_name.value.length>0  && sec2_leg_brandName.value.length>0 && sec2_leg_adress.value.length>0 && sec2_leg_bossName.value.length>0
-  //  && sec2_leg_bossSureName.value.length>0 && sec2_leg_bossPhone.value.length>0 && sec2_leg_bossMail.value.length>0 ){
-
   page1leg.style.display = 'none'
   page2leg.style.display = 'none'
   page3leg.style.display = 'block'
   natform.style.display = 'none';
+})
 
-  //   changeble1.innerHTML='11․ Կայքի տեսակը (ընտրեք)'
-  //   changeble2.innerHTML='12․ Եթե ունեք հին կայք որը ցանկանում եք թարմացնել և սպասարկել, կամ ստեղծել նոր կայք ապա գրեք ձեր տարբերակը այստեղ'
-  //   changeble3.innerHTML='13․ Լեզուների քանակը'
-  //   changeble4.innerHTML='14․ Մոբայլ տարբերակի առկայությունը'
-  //   changeble5.innerHTML='15․ Դոմենի և հոսթինգի արկայությունը (Եթե չկա կարող եք պատվիրել)'
-  //   changeble6.innerHTML='16․ Նախնտրելի դիզայնի տարբերակ (Չունենալու դեպքում<br> կարող եք պատվիրել)'
-  // }
+backButton2leg.addEventListener('click', () => {
+  page1leg.style.display = 'block'
+  page2leg.style.display = 'none'
+  page3leg.style.display = 'none'
+  natform.style.display = 'none';
+})
+
+backButton2.addEventListener('click', () => {
+  page1.style.display = 'block'
+  page2.style.display = 'none'
+  page3.style.display = 'none'
+  legform.style.display = 'none';
+})
+
+backButton3leg.addEventListener('click', () => {
+  page1leg.style.display = 'none'
+  page2leg.style.display = 'block'
+  page3leg.style.display = 'none'
+  natform.style.display = 'none';
+})
+
+backButton3.addEventListener('click', () => {
+  page1.style.display = 'none'
+  page2.style.display = 'block'
+  page3.style.display = 'none'
+  legform.style.display = 'none';
 })
 
 
