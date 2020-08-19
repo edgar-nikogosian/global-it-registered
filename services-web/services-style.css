@@ -549,6 +549,10 @@ li > a {
   font-size: 0.7rem;
 }
 
+.buttons {
+  display: flex;
+}
+
 .section1__freeAdvice button {
   outline: none;
   border: none;
@@ -1087,7 +1091,6 @@ li > a {
   /* font-family: ; */
   font-style: normal;
   font-weight: bold;
-  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -1448,9 +1451,18 @@ li > a {
   border: none;
   outline: none;
   transition: ease 0.5s;
-  margin-left: 3rem;
   margin-bottom: 2rem;
   cursor: pointer;
+}
+
+.send button {
+  margin: 0;
+}
+
+.send {
+  margin-left: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
 #button-back_3-leg {
   background: #4200cf;
@@ -1829,6 +1841,7 @@ opacity:1;
     align-items: center;
   }
   .section2_iputs {
+    margin-left: 0;
     width: 100%;
   }
   .section2_nubmber {
@@ -2084,7 +2097,13 @@ opacity:1;
     padding-right: 3rem;
     padding-left: 3rem;
   }
-  .send button,
+  .buttons > * {
+    flex: 1;
+  } 
+  .send {
+    margin-left: 0;
+  }
+  .send,
   #button-back_3,
   #button-back_2,
   #button-back_3-leg,
@@ -2098,6 +2117,14 @@ opacity:1;
     margin: 3rem;
     border-radius: 10rem;
     font-size: 2.7rem;
+  }
+
+  .send button {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2.7rem;
+    border-radius: 10rem;
   }
   /*---------------section 3 mobile end--------------------------*/
   /*--------------section 1 mobile ------------------------------*/
@@ -2320,6 +2347,7 @@ opacity:1;
 
   /*mobile end*/
 }
+
 
 .dark-mode {
   background: #2a0054 !important;

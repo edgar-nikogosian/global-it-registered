@@ -745,9 +745,6 @@ $(document).ready(function () {
     $(".apply_as_buttone1").css("background", "#ffffff");
     $(".apply_as_buttone1").css("color", "#000000");
   });
-  $(".section3_language_choice").click(function () {
-    $(".dropdawn_lengvich").toggle();
-  })
 });
 
 
@@ -856,47 +853,56 @@ backButton3.addEventListener('click', () => {
 
 
 ///////////////////////lang dropdown
-const langChooseBtn = document.querySelector('.section3_language_choice');
-const langDropdown = document.querySelector('.laguage-dropdown');
+const langChooseBtn = document.querySelectorAll('.section3_language_choice');
+const langDropdown = document.querySelectorAll('.laguage-dropdown');
 const counter = document.querySelector('.counter')
 const langContainer = document.querySelector('.selected-languages-container')
 
-langChooseBtn.addEventListener('click', () => {
-  langDropdown.classList.toggle('lang-dropdown-active')
-})
+langChooseBtn.forEach((item, index) => item.addEventListener('click', () => {
+  langDropdown[index].classList.toggle('lang-dropdown-active')
+}));
 
-const arm = document.getElementById('arm')
-const rus = document.getElementById('rus')
-const eng = document.getElementById('eng')
-const fra = document.getElementById('fra')
-const germ = document.getElementById('germ')
-const dutch = document.getElementById('dutch')
-const spain = document.getElementById('spain')
-const ital = document.getElementById('ital')
-const arab = document.getElementById('arab')
-const slav = document.getElementById('slav')
-const czech = document.getElementById('czech')
+const [arm1, arm2] = document.querySelectorAll('#arm');
+const [rus1, rus2] = document.querySelectorAll('#rus');
+const [eng1, eng2] = document.querySelectorAll('#eng');
+const [fra1, fra2] = document.querySelectorAll('#fra');
+const [germ1, germ2] = document.querySelectorAll('#germ');
+const [dutch1, dutch2] = document.querySelectorAll('#dutch');
+const [spain1, spain2] = document.querySelectorAll('#spain');
+const [ital1, ital2] = document.querySelectorAll('#ital');
+const [arab1, arab2] = document.querySelectorAll('#arab');
+const [slav1, slav2] = document.querySelectorAll('#slav');
+const [czech1, czech2] = document.querySelectorAll('#czech');
 
 
 
 let idGenerator = 0;
-const langArr = [arm, rus, eng, fra, germ, dutch, spain, ital, arab, slav, czech]
-const choosedArr = new Set();
-const checkArrLang = []
+const langArr = [arm1, arm2, rus1, rus2, eng1, eng2, fra1, fra2, germ1, germ2, dutch1, dutch2, spain1, spain2, ital1, ital2, arab1, arab2, slav1, slav2, czech1, czech2];
+const choosedArrs = [new Set(), new Set()];
+const checkArrsLang = [[], []];
 langArr.map((item, i) => {
 
   item.addEventListener('click', () => {
+    let choosedArr;
+    let checkArrLang;
 
+    if (legform.style.display === "" || legform.style.display === "block") {
+      choosedArr = choosedArrs[0];
+      checkArrLang = checkArrsLang[0];
+    } else {
+      choosedArr = choosedArrs[1];
+      checkArrLang = checkArrsLang[1];
+    }
     choosedArr.add(item)
-    counter.innerHTML = choosedArr.size.toString()
+    item.parentNode.nextElementSibling.innerHTML = choosedArr.size.toString()
     let newElem = document.createElement('div')
     newElem.classList.add('selected-language')
     newElem.innerHTML = `${item.innerHTML}` + `<i class='fa fa-times' aria-hidden='true'></i>`
     if (checkArrLang.length < choosedArr.size) {
       newElem.id = `lang${idGenerator++}`
 
-      checkArrLang.push(newElem)
-      langContainer.appendChild(newElem)
+      checkArrLang.push(newElem);
+      item.parentNode.nextElementSibling.nextElementSibling.appendChild(newElem);
       counter.innerHTML = checkArrLang.length
 
       newElem.addEventListener('click', () => {
