@@ -1623,12 +1623,12 @@ height: 4.5rem;
 .card
 {
 	width: 16rem;
-	/*height: 20rem;*/
 	margin-right: 1rem;
 	margin-bottom: 1rem;
 	border: .5px solid gray;
 	display: flex;
 	flex-direction: column;
+    height: fit-content;
 }
 .card:hover .card_header-bg{
 	background: red;
@@ -1707,8 +1707,8 @@ height: 4.5rem;
 .card_header-ilus-wraper img{
 	position: absolute;
 	width: 7.5rem;
-	left: -9px;
-	top: -10px;
+    left: -.7rem;
+    top: -.8rem;
 }
 /*card main*/
 .card_main{
@@ -1740,45 +1740,50 @@ height: 4.5rem;
 }
 .card_main-table table tr:nth-of-type(4)  span{
 	color: #ff1d34;
-	margin-right: 1.3rem;
+	margin-right: 1.2vw;
 }
 .card_main-table table tr:nth-of-type(4) img{
 	width: .8rem;
 }
 .card_main-table button{
 	background: #7339A9;
-	border-radius: 175px;
+	border-radius: 2rem;
 	width: 90%;
 	height: 2.5rem;
 	margin: .6rem auto;
 	border: none;
 	outline: none;
 	color: white;
+    font-size: 1rem;
+}
+.card_main-row img{
+    width: 100%;
+    height: 100%;
 }
 /*2 tarberak carter@ nkarelu*/
-.cardOld{
-	padding: 1.5rem;
-	box-sizing: border-box;
-}
-.cardOld h5{
-	font-size: 2rem;
-}
-.cardOld h5 span{
-	color: #9D3CFE;
-}
-.cardOld h6{
-	font-size: 1.4rem;
-}
-.cardOld button{
-	width: 100%;
-	height: 3rem;
-	margin-top: 1rem;
-	border: none;
-	background: linear-gradient(204.87deg, #FF6948 19.52%, #FEA03C 94.62%);
-	border-radius: 7rem;
-	outline: none;
-	color: white;
-}
+/*.cardOld{*/
+	/*padding: 1.5rem;*/
+	/*box-sizing: border-box;*/
+/*}*/
+/*.cardOld h5{*/
+	/*font-size: 2rem;*/
+/*}*/
+/*.cardOld h5 span{*/
+	/*color: #9D3CFE;*/
+/*}*/
+/*.cardOld h6{*/
+	/*font-size: 1.4rem;*/
+/*}*/
+/*.cardOld button{*/
+	/*width: 100%;*/
+	/*height: 3rem;*/
+	/*margin-top: 1rem;*/
+	/*border: none;*/
+	/*background: linear-gradient(204.87deg, #FF6948 19.52%, #FEA03C 94.62%);*/
+	/*border-radius: 7rem;*/
+	/*outline: none;*/
+	/*color: white;*/
+/*}*/
 
 
 
@@ -1828,7 +1833,8 @@ height: 4.5rem;
 	.faculty_selection{
 		display: none;
 		width: 70%;
-	}
+        z-index: 5;
+    }
 	.is_your_fakultet_img_1,
 	.is_your_fakultet_img_2,
 	.is_your_fakultet_img_3
@@ -1854,9 +1860,131 @@ height: 4.5rem;
 	.card_fakultet{
 		flex-direction: column;
 	}
+    /*card style*/
 	.card{
 		width: 100%;
 	}
+    .card_header {
+        height: 24rem;
+    }
+    .card_header-bg {
+        top: -23.4rem;
+        height: 47rem;
+        width: 91rem;
+    }
+    .card_header-discount {
+        border-top: 6rem solid rgba(226, 3, 8, 0.75);
+        border-left: 6rem solid transparent;
+    }
+    .card_header-discount p {
+        right: 0.5rem;
+        top: -5rem;
+        font-size: 1rem;
+    }
+    .card_header img {
+        top: 10%;
+    }
+    .card_header-circle {
+        width: 15rem;
+        height: 15rem;
+        top: 14.5rem;
+    }
+    .card_header-ilus-wraper img {
+        width: 15.5rem;
+        top: -1.8rem;
+    }
+    /*main content*/
+    .card_main {
+        margin-top: 5.5rem;
+        padding: 2rem;
+    }
+    .card_main h4 {
+        font-size: 3rem;
+    }
+    .card_main p {
+        font-size: 2.4rem;
+        margin-top: 1rem;
+    }
+    .card_main-table {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .card_main-table table tr:nth-of-type(4) span {
+        margin-right: 30vw;
+    }
+    .card_main-table table tr:nth-of-type(4) img {
+        width: 2rem;
+    }
+    .card_main-table button {
+        height: 4.5rem;
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	/*left menu*/
 	.faculty_selection-left-side{
