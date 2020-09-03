@@ -1630,8 +1630,14 @@ height: 4.5rem;
 	flex-direction: column;
     height: fit-content;
 }
+.card_main-row-img{
+	fill: black;
+}
+.card_main-row-img:hover{
+	fill: red;
+}
 .card:hover .card_header-bg{
-	background: red;
+	background: #fb8787;
 }
 .card_header {
 	position: relative;
@@ -1656,9 +1662,9 @@ height: 4.5rem;
 	border-radius: 50%;
 	height: 30rem;
 	width: 35rem;
-	z-index: 3;
-	background: #7E7E7E;
-	opacity: 35%;
+	z-index: 0;
+	background: #a3a3a3;
+	/*opacity: 35%;*/
 }
 .card_header-discount{
 	color: white;
@@ -1681,7 +1687,7 @@ height: 4.5rem;
 .card_header img {
 	width: 100%;
 	position: absolute;
-	z-index: 0;
+	z-index: 1;
 	top: 32%;
 }
 .card_header-circle {
@@ -1761,29 +1767,34 @@ height: 4.5rem;
     height: 100%;
 }
 /*2 tarberak carter@ nkarelu*/
-/*.cardOld{*/
-	/*padding: 1.5rem;*/
-	/*box-sizing: border-box;*/
-/*}*/
-/*.cardOld h5{*/
-	/*font-size: 2rem;*/
-/*}*/
-/*.cardOld h5 span{*/
-	/*color: #9D3CFE;*/
-/*}*/
-/*.cardOld h6{*/
-	/*font-size: 1.4rem;*/
-/*}*/
-/*.cardOld button{*/
-	/*width: 100%;*/
-	/*height: 3rem;*/
-	/*margin-top: 1rem;*/
-	/*border: none;*/
-	/*background: linear-gradient(204.87deg, #FF6948 19.52%, #FEA03C 94.62%);*/
-	/*border-radius: 7rem;*/
-	/*outline: none;*/
-	/*color: white;*/
-/*}*/
+.cardOld{
+	padding: 1.5rem;
+	box-sizing: border-box;
+}
+.cardOld img{
+	width: 100%;
+	height: 15rem;
+}
+.cardOld h5{
+	font-size: 2rem;
+}
+.cardOld h5 span{
+	color: #9D3CFE;
+}
+.cardOld h6{
+	font-size: 1.4rem;
+}
+.cardOld button{
+	width: 100%;
+	height: 3rem;
+	margin-top: 1rem;
+	border: none;
+	background: linear-gradient(204.87deg, #FF6948 19.52%, #FEA03C 94.62%);
+	border-radius: 2rem;
+	outline: none;
+	font-size: 1rem;
+	color: white;
+}
 
 
 
@@ -1920,9 +1931,28 @@ height: 4.5rem;
         font-size: 1.5rem;
     }
 
-
-
-
+    /*card Old style*/
+	.cardOld{
+		padding: 5rem;
+		width: 100%;
+	}
+	.cardOld img {
+		width: 50rem;
+		height: 50rem;
+	}
+	.cardOld h5 {
+		font-size: 7rem;
+	}
+	.cardOld h6 {
+		font-size: 4.5rem;
+	}
+	.cardOld button {
+		width: 100%;
+		height: 9rem;
+		margin-top: 8rem;
+		border-radius: 5rem;
+		font-size: 2.5rem;
+	}
 
 
 

@@ -141,6 +141,9 @@ const changeText = document.querySelectorAll('.changeable-text');
 const facRegText = document.querySelector('.fakultet_registration_text')
 const facGlobalHeading = document.querySelector('.fakultet-global-heading');
 
+const card = document.querySelector('.card');
+const cardMainRowImg = document.querySelectorAll('.card_main-row-img');
+const cardOld = document.querySelector('.cardOld');
 
 let darkBool = false;
 
@@ -165,13 +168,19 @@ themeBtnRound.addEventListener('click', () => {
     themeMainBtn.style.background = '#0A0935';
     themeMainBtn.style.color = '#fff';
     document.body.style.background = '#0B0316';
+    card.style.background = '#17062E';
+    cardMainRowImg.forEach(x=>x.style.filter = 'invert(99%) sepia(1%) saturate(5%) hue-rotate(340deg) brightness(101%) contrast(105%)');
+    cardOld.style.background = '#17062E';
   } else {
     themeBtnRound.style.right = '';
     darkBool = false;
     themeBtnRound.style.background = '#0A0935';
     themeMainBtn.style.background = '#fff';
     themeMainBtn.style.color = '#0A0935';
-    document.body.style.background = ''
+    document.body.style.background = '';
+    card.style.background = '#fff';
+    cardMainRowImg.forEach(x=>x.style.filter= 'invert(0%) sepia(91%) saturate(7485%) hue-rotate(46deg) brightness(107%) contrast(100%)');
+    cardOld.style.background = '#fff';
   }
 
     //selected child add dark Mode
